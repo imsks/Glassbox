@@ -9,7 +9,11 @@ export default function StrictMode() {
 
     useEffect(() => {
         console.log('Component mounted')
-    }, [])
+
+        return () => {
+            console.log('Component unmounted (cleanup)')
+        }
+    }, [count])
 
     return (
         <div>
