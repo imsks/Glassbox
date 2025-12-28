@@ -1,11 +1,11 @@
-import EventDelegationDemo from "./components/EventDelegationDemo"
+import BuildAnalysis from "./components/build-analysis/page"
 
 export default function Home() {
   return (
     <main>
       <h1>Glassbox</h1>
       <p>Day 1: Project initialized</p>
-      <EventDelegationDemo />
+      <BuildAnalysis />
     </main>
   )
 }
