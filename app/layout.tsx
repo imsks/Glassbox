@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import QueryProvider from './providers/QueryProvider'
 
 export const metadata: Metadata = {
   title: 'Glassbox - Learning React & Next.js',
@@ -12,8 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <QueryProvider>
+          {children}
+        </QueryProvider>
+      </body>
     </html>
   )
 }
-
